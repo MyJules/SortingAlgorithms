@@ -5,4 +5,5 @@ add_library(sorting STATIC
 sorting/bubble_sort.h sorting/bubble_sort.cpp
 sorting/quick_sort.h
 sorting/insertion_sort.h
+sorting/selection_sort.h
 sorting/swap.h)
