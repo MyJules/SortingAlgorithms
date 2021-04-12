@@ -5,11 +5,11 @@
 int main(int, char**) {
     std::vector<int> toSort{3, 5, 1, 29, 2, 6, 12};
 
-    srts::bubble_sort(toSort.begin(), toSort.end() - 1);
+    srts::bubble_sort(toSort.begin(), toSort.end());
 
-    for(auto &i : toSort)
-        std::cout << i << " ";
-    std::cout << std::endl;
+    for(auto s : toSort)
+        std::cout << s << " ";
+    std::cout << std::endl; 
 
     return 0;
 }

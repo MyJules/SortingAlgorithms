@@ -1,3 +1,3 @@
 #pragma once
 
-#include "sorting/sort_bubble.h"
+#include "sorting/bubble_sort.h"
