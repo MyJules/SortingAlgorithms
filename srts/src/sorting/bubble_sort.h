@@ -1,7 +1,6 @@
 #pragma once
 
 #include "swap.h"
-#include <iostream>
 
 namespace srts{
     template<typename Iter>
@@ -15,7 +14,7 @@ namespace srts{
                     srts::iter_swap(it, i);
                 }
             }
-            //if array is already sorted break
+            //if array is already sorted, break
             if(isSorted)
                 break;
         }
