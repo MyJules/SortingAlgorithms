@@ -2,7 +2,6 @@
 
 #include <iterator>
 #include <ctime>
-#include <iostream>
 
 namespace srts{
     template<typename Iter>
@@ -29,13 +28,12 @@ namespace srts{
 
     template<typename Iter>
     void quick_sort(Iter begin, Iter end){
-        //until partition contains elements
-        if(std::distance(begin, end) > 0){  
-            //find pivot, all smaller then pivot to the left, all greater then pivot to the right
-            Iter divide = random_partition(begin, end);
-            //call quick sort recursively
-            quick_sort(begin, divide);
-            quick_sort(divide + 1, end);
-        }
-    }
+        //if partition don't contain element return
+        if(std::distance(begin, end) <= 0) return;
+        //find pivot, all smaller then pivot to the left, all greater then pivot to the right
+        Iter divide = random_partition(begin, end);
+        //call quick sort recursively
+        quick_sort(begin, divide);
+        quick_sort(divide + 1, end);
+}
 }
